@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Boggle!{% endblock %}
+
+{% block content %}
+
+<table>
+    <tbody>
+        {% for row in board %}
+        <tr>
+            {% for cell in row %}
+            <td>{{cell}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<form id="guess-submit" action="" method="POST">
+
+    <input id="guess-input" type="text">
+    <button id="submit-guess">Enter Guess</button>
+
+</form>
+
+<p id="guess-response-message">
+
+</p>
+
+<p>Your Valid Guesses:</p>
+
+<ul id="valid-words">
+
+</ul>
+
+{% endblock %}
