@@ -16,12 +16,19 @@
     </tbody>
 </table>
 
-<form id="guess-submit" action="" method="POST">
+<p id="timer"></p>
+
+<form id="guess-submit" class="showing-block" action="" method="">
 
     <input id="guess-input" type="text">
     <button id="submit-guess">Enter Guess</button>
 
 </form>
+
+<p id="game-over" class="hidden" style="display: none;">GAME OVER!</p>
+
+<div><span id="score-label">Score:</span><span id="score-quantity"></span></div>
+<div><span id="high-score-label" style="display: none;">High Score:</span><span id="high-score" style="display: none;"></span></div>
 
 <p id="guess-response-message">
 
@@ -29,7 +36,7 @@
 
 <p>Your Valid Guesses:</p>
 
-<ul id="valid-words">
+<ul id="valid-word-list">
 
 </ul>
 
